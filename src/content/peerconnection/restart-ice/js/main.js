@@ -87,6 +87,8 @@ function start() {
 function restart() {
   restartButton.disabled = true;
   offerOptions.iceRestart = true;
+  console.log('pc1: ====>>>>', pc1)
+  console.log('pc2: ====>>>>', pc2)
   console.log('pc1 createOffer restart');
   pc1.createOffer(offerOptions).then(onCreateOfferSuccess, onCreateSessionDescriptionError);
 }
